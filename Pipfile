@@ -7,6 +7,8 @@ name = "pypi"
 pyspark = "*"
 
 [dev-packages]
+pylint = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.10.12"

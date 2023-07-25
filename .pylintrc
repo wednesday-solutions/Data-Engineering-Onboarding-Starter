@@ -1,0 +1,6 @@
+[MASTER]
+disable=C0114
+
+[FORMAT]
+max-line-length=150
+max-module-lines=300
