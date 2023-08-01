@@ -1,6 +1,6 @@
 install:
 	@echo "Installing dependencies..."
-	@pipenv install
+	@pipenv install --dev
 
 setup: install
 	@echo "Installing pre-commit hooks..."
@@ -14,3 +14,6 @@ test:
 lint:
 	@echo "Running linter..."
 	@pylint --rcfile=.pylintrc src
+
+type-check:
+	@echo "Running type checker..."
