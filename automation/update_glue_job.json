@@ -1,0 +1,32 @@
+{
+  "JobName": "sample-name",
+  "JobUpdate": {
+    "Description": "this is a description",
+    "Role": "arn:aws:iam::511522223657:role/service-role/AWSGlueServiceRole-demo",
+    "ExecutionProperty": {
+      "MaxConcurrentRuns": 1
+    },
+    "Command": {
+      "Name": "glueetl",
+      "ScriptLocation": "sample-location",
+      "PythonVersion": "3"
+    },
+    "DefaultArguments": {
+      "--enable-glue-datacatalog": "true",
+      "--job-bookmark-option": "job-bookmark-enable",
+      "--TempDir": "s3://sample-glue-wednesday/scripts/temporary/",
+      "--enable-metrics": "true",
+      "--enable-spark-ui": "true",
+      "--spark-event-logs-path": "s3://sample-glue-wednesday/scripts/sparkHistoryLogs/",
+      "--enable-job-insights": "true",
+      "--enable-continuous-cloudwatch-log": "true",
+      "--job-language": "python",
+      "--DB_TABLE": "survey_results_public"
+    },
+    "MaxRetries": 0,
+    "Timeout": 2880,
+    "WorkerType": "G.1X",
+    "NumberOfWorkers": 2,
+    "GlueVersion": "3.0"
+  }
+}
