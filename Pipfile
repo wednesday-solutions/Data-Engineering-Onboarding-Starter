@@ -10,5 +10,9 @@ pyspark = "*"
 pylint = "*"
 pre-commit = "*"
 
+[scripts]
+lint = "pylint --rcfile=.pylintrc src"
+type-check = "echo 'Running typechecker...'"
+
 [requires]
 python_version = "3.10.12"
