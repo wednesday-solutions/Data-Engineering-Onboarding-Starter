@@ -20,8 +20,7 @@
       "--spark-event-logs-path": "s3://sample-glue-wednesday/scripts/sparkHistoryLogs/",
       "--enable-job-insights": "true",
       "--enable-continuous-cloudwatch-log": "true",
-      "--job-language": "python",
-      "--DB_TABLE": "survey_results_public"
+      "--job-language": "python"
     },
     "MaxRetries": 0,
     "Timeout": 2880,
