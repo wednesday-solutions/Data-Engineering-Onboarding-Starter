@@ -19,7 +19,7 @@ jobs:
               with:
                 args: --follow-symlinks
               env:
-                SOURCE_DIR: "./src/scripts/*"
+                SOURCE_DIR: "./src/scripts/**/*"
                 DEST_DIR: ${{ secrets.S3_SCRIPTS_PATH }}
                 AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
 
