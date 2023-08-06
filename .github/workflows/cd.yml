@@ -3,6 +3,7 @@ on:
     push:
         branches:
             - main
+            - feat/glue-examples-and-cd
 jobs:
     deploy:
         runs-on: ubuntu-latest
