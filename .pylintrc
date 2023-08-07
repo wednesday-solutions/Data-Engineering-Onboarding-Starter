@@ -1,6 +1,9 @@
 [MASTER]
-disable=C0114,C0413
+disable=C0114,C0413,R0801
 
 [FORMAT]
 max-line-length=150
 max-module-lines=300
+
+[SIMILARITIES]
+min-similarity-lines=6

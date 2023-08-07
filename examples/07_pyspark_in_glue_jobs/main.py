@@ -1,11 +1,6 @@
-# import sys
 from awsglue.job import Job
 from awsglue.context import GlueContext
-
-# from awsglue.utils import getResolvedOptions
 from pyspark.context import SparkContext
-
-# from pyspark.sql.session import SparkSession
 import pyspark.sql.functions as f
 
 # Spark context setup
