@@ -3,9 +3,16 @@ on:
     push:
         branches:
             - main
+            - feat/glue-examples-and-cd
 jobs:
     deploy:
         runs-on: ubuntu-latest
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+          S3_SCRIPTS_PATH: ${{ secrets.S3_SCRIPTS_PATH }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
         steps:
             - uses: actions/checkout@v2
 
@@ -16,10 +23,11 @@ jobs:
                 args: --follow-symlinks
               env:
                 SOURCE_DIR: "./src/scripts/"
-                DEST_DIR: ${{ secrets.S3_SCRIPTS_PATH }}
-                AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+                DEST_DIR: $S3_SCRIPTS_PATH
+                AWS_S3_BUCKET: $S3_BUCKET_NAME
 
             # Step 2: Update AWS Glue job details if the config is changed
             - run: |
                 chmod +x ./automation/deploy_glue_job.sh
-              name: Update AWS Glue job details if the config is changed
+                ./automation/deploy_glue_job.sh "$S3_BUCKET_NAME/$S3_SCRIPTS_PATH"
+              name: Create or update AWS Glue job
