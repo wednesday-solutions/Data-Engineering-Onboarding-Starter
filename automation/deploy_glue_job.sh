@@ -14,10 +14,13 @@ do
       # Check if the job exists, if not create it, else update it
       job_exists=$(aws glue get-job --job-name $file_name | jq -r .Job.Name)
 
+      # Create S3 path to the main.py file
+      script_location="s3://$s3_path/$file_name/main.py"
+
       if [ "$job_exists" != "$file_name" ]; then
         # Set the script name in the glue_job.json file using jq
         json_data=$(jq --arg SCRIPT_NAME "$file_name" '.Name=$SCRIPT_NAME' automation/create_glue_job.json)
-        json_data=$(jq --arg LOCATION "$s3_path/$file_name/main.py" '.Command.ScriptLocation=$LOCATION' <<< $json_data)
+        json_data=$(jq --arg LOCATION $script_location '.Command.ScriptLocation=$LOCATION' <<< $json_data)
 
         # Create the glue job
         echo "Creating glue job $file_name"
@@ -25,7 +28,7 @@ do
       else
         # Set the script name in the glue_job.json file using jq
         json_data=$(jq --arg SCRIPT_NAME "$file_name" '.JobName=$SCRIPT_NAME' automation/update_glue_job.json)
-        json_data=$(jq --arg LOCATION "$s3_path/$file_name/main.py" '.JobUpdate.Command.ScriptLocation=$LOCATION' <<< $json_data)
+        json_data=$(jq --arg LOCATION $script_location '.JobUpdate.Command.ScriptLocation=$LOCATION' <<< $json_data)
 
         # Update the glue job
         echo -e "\nUpdating glue job $file_name"
