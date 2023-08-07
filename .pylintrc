@@ -6,4 +6,4 @@ max-line-length=150
 max-module-lines=300
 
 [SIMILARITIES]
-min-similarity-lines=6
+min-similarity-lines=4
