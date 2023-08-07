@@ -10,6 +10,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
         steps:
             - uses: actions/checkout@v2
 
@@ -27,4 +28,4 @@ jobs:
             - run: |
                 chmod +x ./automation/deploy_glue_job.sh
                 ./automation/deploy_glue_job.sh "$AWS_S3_BUCKET/$S3_SCRIPTS_PATH"
-              name: Update AWS Glue job details if the config is changed
+              name: Create or update AWS Glue job
