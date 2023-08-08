@@ -22,14 +22,15 @@ df1 = sc.read.csv("src/data/survey_results_public.csv", header=True, inferSchema
 # Print the schema of the DataFrame
 df1.printSchema()
 
-# ---------------------------- METHOD: 1 From a database ----------------------------- #
+# ---------------------------- METHOD: 2 From a database ----------------------------- #
 
+# Note: Make sure to update the database credentials below
 df2 = (
     sc.read.format("jdbc")
     .option("url", "jdbc:postgresql://localhost:5432/data-engg")
     .option("dbtable", "survey_results_public")
-    .option("user", "")
-    .option("password", "")
+    .option("user", "")  # Update the username
+    .option("password", "")  # Update the password
     .load()
 )
 
@@ -57,7 +58,6 @@ df3 = sc.createDataFrame(data=data, schema=defined_schema)
 
 # Print the schema of the DataFrame
 df3.printSchema()
-
 
 # ----- METHOD: 4 Specify the data & schema explicitly, and infer the data type ------ #
 
