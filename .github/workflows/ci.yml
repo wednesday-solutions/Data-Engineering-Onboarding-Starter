@@ -40,15 +40,3 @@ jobs:
 
             - name: Type check
               run: pipenv run type-check
-
-            # - name: Test
-            #   run: make test
-
-            # - name: Publish coverage report
-            #   uses: codecov/codecov-action@v2.1.0
-            #   with:
-            #     token: ${{ secrets.CODECOV_TOKEN }}
-            #     file: ./coverage.xml
-            #     flags: unittests
-            #     name: codecov-umbrella
-            #     fail_ci_if_error: true
