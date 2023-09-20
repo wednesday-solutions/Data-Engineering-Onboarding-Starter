@@ -1,4 +1,4 @@
-name: Data Engieering - Deploy to AWS Glue
+name: Data Engineering - Deploy to AWS Glue
 on:
     push:
         branches:
