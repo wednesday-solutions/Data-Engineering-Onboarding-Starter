@@ -45,7 +45,7 @@ An immersive data engineering journey awaits you in this comprehensive starter k
 
 ## Folder Structure
 
-```bash
+```
 ├── Makefile                                   | -> Allows you to run commands for setup, test, lint, etc
 ├── README.md                                  | -> Documentation for the project setup and usage
 │
