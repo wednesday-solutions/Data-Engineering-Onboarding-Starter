@@ -1,7 +1,7 @@
 <img align="left" src="https://github-production-user-asset-6210df.s3.amazonaws.com/105773536/269245524-c4fefc57-ebfe-4f1b-87ba-e4e4fc2bc745.png" width="480" height="540" />
 
 <div>
-  <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=react-template" align="left" style="margin-left: 0;">
+  <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=data-engineering-onboarding" align="left" style="margin-left: 0;">
     <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f5879492fafecdb3e5b0e75_wednesday_logo.svg">
   </a>
   <p>
