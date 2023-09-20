@@ -1,5 +1,5 @@
 
-# Data Engineering Starter
+# Data Engineering Onboarding Starter
 
 [![Data Engineering - Deploy to AWS Glue](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml) [![Data Engineering CI](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml)
 
