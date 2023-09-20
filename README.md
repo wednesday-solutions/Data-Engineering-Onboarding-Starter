@@ -43,60 +43,61 @@ An immersive data engineering journey awaits you in this comprehensive starter k
 3. [AWS CLI configured locally](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 4. [Docker](https://docs.docker.com/desktop/install/mac-install/) (Optional)
 
-## 
+## Folder Structure
 
 ```bash
-├── Makefile
-├── Pipfile
-├── README.md
-├── automation
-│   ├── deploy_glue_job.sh
-├── examples
-│   ├── 01_pyspark_dataframe
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 02_applying_filters
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 03_transform_columns
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 04_remap_columns
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 05_complex_transformations
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 06_write_dataframe
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 07_pyspark_in_glue_jobs
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 08_glue_dynamic_frame
-│   │   ├── README.md
-│   │   └── main.py
-│   ├── 09_apply_mappings
-│   │   ├── README.md
-│   │   └── main.py
-│   └── 10_write_to_target
-│       ├── README.md
-│       └── main.py
-└── src
-    ├── data
-    │   ├── customers.csv
-    │   ├── survey_results_public.csv
-    │   ├── survey_results_public.parquet
-    ├── scripts
-    │   ├── a_stackoverflow_survey
-    │   │   └── main.py
-    │   ├── b_fix_this_script
-    │   │   ├── README.md
-    │   │   └── main.py
-    │   └── c_top_spotify_tracks
-    │       └── README.md
-    ├── tests
-    └── utils
+├── Makefile                                   | -> Allows you to run commands for setup, test, lint, etc
+├── README.md                                  | -> Documentation for the project setup and usage
+│
+├── automation                                 | -> Contains scripts to automate deployment and testing
+│   └── deploy_glue_job.sh                     | -> Script to deploy or update glue job
+│
+├── examples                                   | -> Contains example scripts to demonstrate pyspark features
+│   ├── 01_pyspark_dataframe                   | -> Create a DataFrame by reading data from a source (CSV, Parquet Database, etc)
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to read csv file and write to parquet
+│   ├── 02_applying_filters                    | -> Apply filters on a dataframe
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to apply filters on dataframe
+│   ├── 03_transform_columns                   | -> Transform columns & manipulate data in a dataframe
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to transform columns
+│   ├── 04_remap_columns                       | -> Normalise columns in a dataframe
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to normalise columns in a dataframe
+│   ├── 05_complex_transformations             | -> Perform complex transformations on a dataframe
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to perform some complex transformations
+│   ├── 06_write_dataframe                     | -> Write a dataframe to a target
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to write dataframe to parquet or RDBMS Database
+│   ├── 07_pyspark_in_glue_jobs                | -> Examples of using PySpark in AWS Glue Jobs
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to run pyspark script in glue job
+│   ├── 08_glue_dynamic_frame                  | -> Create a DynamicFrame by reading data from a data catalog
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to create a dynamic frame from a data catalog
+│   ├── 09_apply_mappings                      | -> Apply mappings on a dynamic frame (change column names, data types, etc)
+│   │   ├── README.md                             | -> Contains instructions to run the example
+│   │   └── main.py                               | -> Example script to apply mappings on dynamic frame
+│   └── 10_write_to_target                     | -> Write a dynamic frame to a target (CSV, Parquet, Database, etc)
+│       ├── README.md                             | -> Contains instructions to run the example
+│       └── main.py                               | -> Example script to write dynamic frame to parquet and store in S3
+│
+└── src                                        | -> Contains all the source code for the onboarding exercise
+    ├── data                                   | -> Contains data files for the onboarding exercise
+    │   ├── customers.csv                         | -> Customer Dataset CSV file
+    │   ├── survey_results_public.csv             | -> Stackoverflow Survey CSV file
+    │   └── survey_results_public.parquet         | -> Stackoverflow Survey Parquet file
+    │
+    └── scripts                                | -> Contains all the glue scripts exercise
+        ├── a_stackoverflow_survey                | -> A sample glue script to read, apply mappings, transform data
+        │   └── main.py
+        ├── b_fix_this_script                     | -> A broken glue script for you to fix
+        │   ├── README.md
+        │   └── main.py
+        └── c_top_spotify_tracks                  | -> A task for you to complete. Best of luck!
+            └── README.md
 
 ```
 
