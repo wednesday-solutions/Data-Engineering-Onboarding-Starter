@@ -1,5 +1,36 @@
+<img align="left" src="https://github.com/wednesday-solutions/react-template/blob/master/react_template_github.svg" width="480" height="540" />
 
-# Data Engineering Onboarding Starter
+<div>
+  <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=react-template" align="left" style="margin-left: 0;">
+    <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f5879492fafecdb3e5b0e75_wednesday_logo.svg">
+  </a>
+  <p>
+    <h1 align="left">Data Engineering Onboarding Starter
+    </h1>
+  </p>
+
+  <p>
+An immersive data engineering journey awaits you in this comprehensive starter kit, featuring a curated list of resources, tools, and best practices to help you get started with data engineering. This starter kit is designed to help you learn the basics of data engineering and get you up and running with your first data engineering project.
+  </p>
+
+---
+
+  <p>
+    <h4>
+      Expert teams of digital product strategists, developers, and designers.
+    </h4>
+  </p>
+
+  <div>
+    <a href="https://www.wednesday.is/contact-us?utm_source=gthb&utm_medium=repo&utm_campaign=serverless" target="_blank">
+      <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f6ae88b9005f9ed382fb2a5_button_get_in_touch.svg" width="121" height="34">
+    </a>
+    <a href="https://github.com/wednesday-solutions/" target="_blank">
+      <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f6ae88bb1958c3253756c39_button_follow_on_github.svg" width="168" height="34">
+    </a>
+  </div>
+
+---
 
 [![Data Engineering - Deploy to AWS Glue](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml) [![Data Engineering CI](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml)
 
@@ -9,6 +40,63 @@
 2. [Install Java 8](https://www.oracle.com/in/java/technologies/downloads/#java8-mac)
 3. [AWS CLI configured locally](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 4. [Docker](https://docs.docker.com/desktop/install/mac-install/) (Optional)
+
+##
+
+```bash
+├── Makefile
+├── Pipfile
+├── README.md
+├── automation
+│   ├── deploy_glue_job.sh
+├── examples
+│   ├── 01_pyspark_dataframe
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 02_applying_filters
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 03_transform_columns
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 04_remap_columns
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 05_complex_transformations
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 06_write_dataframe
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 07_pyspark_in_glue_jobs
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 08_glue_dynamic_frame
+│   │   ├── README.md
+│   │   └── main.py
+│   ├── 09_apply_mappings
+│   │   ├── README.md
+│   │   └── main.py
+│   └── 10_write_to_target
+│       ├── README.md
+│       └── main.py
+└── src
+    ├── data
+    │   ├── customers.csv
+    │   ├── survey_results_public.csv
+    │   ├── survey_results_public.parquet
+    ├── scripts
+    │   ├── a_stackoverflow_survey
+    │   │   └── main.py
+    │   ├── b_fix_this_script
+    │   │   ├── README.md
+    │   │   └── main.py
+    │   └── c_top_spotify_tracks
+    │       └── README.md
+    ├── tests
+    └── utils
+
+```
 
 ---
 
@@ -92,8 +180,6 @@ $ cp $AWS_GLUE_HOME/jarsv1/aws*.jar $SPARK_HOME/jars/
 
 `tools.jar` error
 solution: [YouTube](https://www.youtube.com/watch?v=W8gsavSbOcw&ab_channel=JustAnotherDangHowToChannel)
-
-
 
 ## Run Locally Using
 
