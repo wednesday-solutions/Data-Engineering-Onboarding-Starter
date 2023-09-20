@@ -1,4 +1,4 @@
-<img align="left" src="https://github.com/wednesday-solutions/Data-Engineering-Onboarding-Starter/assets/105773536/5acdca39-663f-45bb-8f0c-45677a1cedeb" width="480" height="540" />
+<img align="left" src="https://github-production-user-asset-6210df.s3.amazonaws.com/105773536/269245524-c4fefc57-ebfe-4f1b-87ba-e4e4fc2bc745.png" width="480" height="540" />
 
 <div>
   <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=react-template" align="left" style="margin-left: 0;">
