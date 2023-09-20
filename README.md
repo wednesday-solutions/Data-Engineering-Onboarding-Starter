@@ -1,4 +1,4 @@
-<img align="left" src="https://github.com/wednesday-solutions/react-template/blob/master/react_template_github.svg" width="480" height="540" />
+<img align="left" src="https://github.com/wednesday-solutions/Data-Engineering-Onboarding-Starter/assets/105773536/5acdca39-663f-45bb-8f0c-45677a1cedeb" width="480" height="540" />
 
 <div>
   <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=react-template" align="left" style="margin-left: 0;">
@@ -34,6 +34,8 @@ An immersive data engineering journey awaits you in this comprehensive starter k
 
 [![Data Engineering - Deploy to AWS Glue](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/cd.yml) [![Data Engineering CI](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml/badge.svg)](https://github.com/wednesday-solutions/data-engg/actions/workflows/ci.yml)
 
+---
+
 ## Prerequisites
 
 1. [Python3 with PIP](https://www.python.org/downloads/)
@@ -41,7 +43,7 @@ An immersive data engineering journey awaits you in this comprehensive starter k
 3. [AWS CLI configured locally](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 4. [Docker](https://docs.docker.com/desktop/install/mac-install/) (Optional)
 
-##
+## 
 
 ```bash
 ├── Makefile
