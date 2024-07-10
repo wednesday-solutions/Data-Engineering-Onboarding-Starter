@@ -1,7 +1,7 @@
 <img align="left" src="https://github-production-user-asset-6210df.s3.amazonaws.com/105773536/269245524-c4fefc57-ebfe-4f1b-87ba-e4e4fc2bc745.png" width="480" height="540" />
 
 <div>
-  <a href="https://www.wednesday.is/?utm_source=github&utm_medium=dataengg-template" align="left" style="margin-left: 0;">
+  <a href="https://www.wednesday.is/?utm_source=github&utm_medium=dataengg-starter" align="left" style="margin-left: 0;">
     <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f5879492fafecdb3e5b0e75_wednesday_logo.svg">
   </a>
   <p>
@@ -22,7 +22,7 @@ An immersive data engineering journey awaits you in this comprehensive starter k
   </p>
 
   <div>
-    <a href="https://www.wednesday.is/contact-us/?utm_source=github&utm_medium=dataengg-template" target="_blank">
+    <a href="https://www.wednesday.is/contact-us/?utm_source=github&utm_medium=dataengg-starter" target="_blank">
       <img src="https://uploads-ssl.webflow.com/5ee36ce1473112550f1e1739/5f6ae88b9005f9ed382fb2a5_button_get_in_touch.svg" width="121" height="34">
     </a>
     <a href="https://github.com/wednesday-solutions/" target="_blank">
